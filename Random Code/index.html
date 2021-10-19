@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+//adds 7 to nOne
+function add7(num) {
+    if (isNaN(num)) {
+        alert("You must enter a number!");
+    } else alert(+num + 7);
+};
+
+//multiplies two numbers
+function multiply(mNum1,mNum2) {
+    if (isNaN(mNum1) || isNaN(mNum2)) {
+     return alert("You must enter a number!");
+    }else return alert(+mNum1 * +mNum2);
+};
+
+//Changes strings to proper case 
+function caseConversion(newStr) {
+    for (i = 0; i <= newStr.length; i++) {
+        newStr = newStr.replace(newStr.charAt(1 + i), newStr.charAt(1 + i).toLowerCase());
+    } return newStr;
+};
+
+//Takes the last letter of a string
+function lastLetter(fullStr) {
+    for (i = 0; i < fullStr.length; i++) {
+        if (fullStr.charAt(1 + +i) = NaN || undefined) {
+            return alert(fullStr.charAt(i));
+        };
+    };
+return newStr;
+};
+
+//Add 7 to a number
+let nOne = prompt("Enter first number:", ' ');
+add7(nOne);
+
+//Multiply two numbers
+let mOne = prompt("Enter multiply number one:");
+let mTwo = prompt("Enter multiply number two:");
+multiply(mOne,mTwo);
+
+//String Conversion
+let string = prompt("Enter a sentense:", ``);
+string = string.toUpperCase();
+alert("The string you have entered is: " + caseConversion(string));
+alert("The last letter of your string is: " + lastLetter(string));
+
+
+
+</script>
+</body>
+</html>
